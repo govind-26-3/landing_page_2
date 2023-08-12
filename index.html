@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <img src="logo.png" id="logo" alt="virtual space">
+        </div>
+        <ul class="nav">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Demo</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <div class="content">
+            <img id="bindu" src="dots.png" alt=""  class="dot">
+            <img id="bindu" src="dots.png" alt=""  class="dot dot2">
+            <img src="rounded-star.png" alt="" id="round" class="star">
+            <h1>vr virtual</h1>
+            <div class="button">
+            <a href="#" id="nav">Shop now</a>
+            <a href="#" id="nav">See offers</a>
+        </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Illum molestiae  .</p>
+        </div>
+        <div class="imgBox">
+            <img class="img" src="main-img.png" alt="">
+
+        </div>
+        <div class="side">
+            <p>live streaming</p>
+            <img id="hover" src="arrow.png" alt="" class="arrow">
+<div class="connect">
+            
+    <ion-icon name="logo-facebook"></ion-icon>
+    <ion-icon name="logo-instagram"></ion-icon>
+    <ion-icon name="logo-tiktok"></ion-icon>
+    <ion-icon name="logo-twitter"></ion-icon>
+            
+        </div>
+        </div>
+        <img onclick="changeMode()" id="button" src="moon.png" alt="">
+            
+        
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script>
+     function changeMode() {
+         var body = document.body;
+         
+         // toggle the theme
+         body.classList.toggle("dark-theme");
+         let button = document.getElementById('button');    
+
+         if(document.body.classList.contains("dark-theme")){
+            button.src = "sun.png"
+            hover.src = 'bluearrow.png'
+            logo.src='blogo.png'
+            round.src='bround.png'
+            bindu.src='bdots.png'
+
+         }
+         else{
+button.src = "moon.png"
+hover.src = 'arrow.png'
+logo.src='logo.png'
+round.src='round.png'
+// bindu.src='dots.png'
+         } 
+     }
+</script>
+</body>
+
+</html>
